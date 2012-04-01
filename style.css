@@ -1,0 +1,11 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body,html{
+	font-family: "Helvetica","Arial",sans-serif;
+}
+#container{
+	width: 256px;
+	height: 256px;
+}

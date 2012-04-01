@@ -1,0 +1,22 @@
+<html>
+	<head>
+		<title>QR</title>
+		<link rel="stylesheet" href="style.css"/>
+		<script type="text/javascript" src="jquery.js"></script>
+		<script type="text/javascript" src="jquery.qrcode.min.js"></script>
+	</head>
+	<body>
+		<div id="container">
+		
+		</div>
+		<script type="text/javascript">
+			 window.addEventListener("load", windowLoaded, false);
+    			function windowLoaded() {
+    			  chrome.tabs.getSelected(null, function(tab) {
+    			  	jQuery('#container').qrcode(tab.url) 
+    			    
+    			  });
+    		}
+		</script>
+	</body>
+</html>
