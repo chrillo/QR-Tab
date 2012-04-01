@@ -1,0 +1,36 @@
+<html>
+	<head>
+		<title>QR</title>
+		
+		<script type="text/javascript" src="jquery.js"></script>
+		<script type="text/javascript" src="jquery.qrcode.min.js"></script>
+		<style type="text/css">
+			*{
+				margin: 0px;
+				padding: 0px;
+			}
+			#container{
+				width: 256px;
+				height: 256px;
+			}
+		
+		</style>
+	</head>
+	<body>
+		<div id="container">
+		
+		</div>
+		<script type="text/javascript">
+			 window.addEventListener("load", windowLoaded, false);
+    			function windowLoaded() {
+    			  //chrome.tabs.getSelected(null, function(tab) {
+    			  	jQuery('#container').qrcode("https://github.com/chrillo/QR-Tab") 
+    			   	jQuery('#container canvas').attr("id","canvas");
+    			   var canvas = document.getElementById("canvas");
+var img    = canvas.toDataURL("image/png");
+document.write('<img src="'+img+'"/>');
+    			  //});
+    			}
+		</script>
+	</body>
+</html>
