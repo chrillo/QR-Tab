@@ -4,7 +4,7 @@
   "manifest_version": 1,
   "description": "Creates QR code for the URL of the current Tab",
   "browser_action": {
-    "default_icon": "icon_16.png",
+    "default_icon": "icon_18.png",
     "default_popup": "popup.html"
   },
   "icons": {
